@@ -22,6 +22,8 @@ public class Puzzle : MonoBehaviour
 
     private PuzzleCellView[][] _cellViews;
     private int[][] _puzzle;
+    
+    private ValueTuple<int, int>[] _correctPositions;
 
     private Vector2Int _zeroPos;
 
@@ -31,6 +33,7 @@ public class Puzzle : MonoBehaviour
         // Time.timeScale = 0.05f;
         _gridLayoutGroup.constraintCount = Width;
         _cellViews = new PuzzleCellView[Height][];
+        _correctPositions = new ValueTuple<int, int>[Area];
         for (int i = 0; i < Height; i++)
         {
             _cellViews[i] = new PuzzleCellView[Width];
@@ -40,6 +43,7 @@ public class Puzzle : MonoBehaviour
                 cellView.Initialize(i, j);
                 cellView.onClicked += () => OnClickedCell(cellView);
                 _cellViews[i][j] = cellView;
+                _correctPositions[i * Width + j] = ValueTuple.Create(i, j); 
             }
         }
 
@@ -181,5 +185,22 @@ public class Puzzle : MonoBehaviour
         }
 
         return numbers.Count;
+    }
+    
+    public int GetDistanceSum()
+    {
+        int res = 0;
+        for (int i = 0; i < Height; i++)
+        {
+            for (int j = 0; j < Width; j++)
+            {
+                var number = _cellViews[i][j].Number;
+                int y = _correctPositions[number].Item1;
+                int x = _correctPositions[number].Item2;
+                res += Mathf.Abs(i - y) + Mathf.Abs(j - x); 
+            }
+        }
+
+        return res;
     }
 }

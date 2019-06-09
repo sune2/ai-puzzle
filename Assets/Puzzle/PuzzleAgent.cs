@@ -17,7 +17,7 @@ public class PuzzleAgent : Agent
     {
         base.AgentReset();
         _puzzle.Initialize();
-        _currentMaxIndex = 0;
+        _currentMaxIndex = _puzzle.GetDistanceSum();
     }
 
     public override void CollectObservations()
@@ -43,24 +43,37 @@ public class PuzzleAgent : Agent
         var success = _puzzle.Slide(index);
         if (!success) AddReward(-1);
 
-        var val = _puzzle.GetFirstDifferentIndex();
+        var val = _puzzle.GetDistanceSum();
 
-        
-        if (val > _currentMaxIndex)
+//        if (val > _currentMaxIndex)
+//        {
+//            AddReward(10 * (val - _currentMaxIndex));
+//            _currentMaxIndex = val;
+//        }
+
+        if (val < _currentMaxIndex)
         {
-            AddReward(10 * (val - _currentMaxIndex));
+            AddReward(10 * (_currentMaxIndex - val));
             _currentMaxIndex = val;
         }
-        
-        AddReward(-0.001f * (Puzzle.Area - val));
+
+//        AddReward(-0.001f * val);
         // AddReward(-0.01f);
 
         // Debug.Log(GetReward());
 
-        if (val == Puzzle.Area)
+        AddReward(-0.01f);
+
+        if (val == 0)
         {
             AddReward(100);
             Done();
         }
+
+        if (GetStepCount() == 990)
+        {
+            AddReward(100f / val);
+            Done();
+        } 
     }
 }
