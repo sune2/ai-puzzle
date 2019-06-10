@@ -17,7 +17,7 @@ public class PuzzleAgent : Agent
     {
         base.AgentReset();
         _puzzle.Initialize();
-        _currentMaxIndex = _puzzle.GetFirstDifferentIndex();
+        _currentMaxIndex = 0;
     }
 
     public override void CollectObservations()
@@ -45,20 +45,21 @@ public class PuzzleAgent : Agent
 
         var val = _puzzle.GetFirstDifferentIndex();
 
+        
         if (val > _currentMaxIndex)
         {
-            for (int i = _currentMaxIndex; i < val; i++)
-            {
-                AddReward(5 * i);                
-            }
+            AddReward(10 * (val - _currentMaxIndex));
             _currentMaxIndex = val;
         }
-
+        
         AddReward(-0.001f * (Puzzle.Area - val));
+        // AddReward(-0.01f);
+
+        // Debug.Log(GetReward());
 
         if (val == Puzzle.Area)
         {
-            // AddReward(200);
+            AddReward(100);
             Done();
         }
     }
