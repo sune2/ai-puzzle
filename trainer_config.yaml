@@ -1,0 +1,8 @@
+PuzzleLearningBrain:
+    batch_size: 128
+    buffer_size: 12800
+    summary_freq: 2000
+    time_horizon: 256
+    max_steps: 2.0e6
+    gamma: 0.99
+    beta: 0.001

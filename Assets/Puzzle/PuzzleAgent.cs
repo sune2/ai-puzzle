@@ -44,7 +44,6 @@ public class PuzzleAgent : Agent
         if (!success) AddReward(-1);
 
         var val = _puzzle.GetFirstDifferentIndex();
-
         
         if (val > _currentMaxIndex)
         {
@@ -52,8 +51,7 @@ public class PuzzleAgent : Agent
             _currentMaxIndex = val;
         }
         
-        AddReward(-0.001f * (Puzzle.Area - val));
-        // AddReward(-0.01f);
+        AddReward(-0.01f);
 
         // Debug.Log(GetReward());
 

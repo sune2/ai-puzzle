@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: b0cb1f9e9a11740dbbd3cc306664001b
+guid: b06a5310c78cf405d83b7fb950ea0b0a
 ScriptedImporter:
   fileIDToRecycleName:
-    11400002: Assets/Puzzle/Brains/PuzzleLearningBrain.nn
+    11400002: Assets/Puzzle/Brains/PuzzleLearningBrain4x4_2.nn
   externalObjects: {}
   userData: 
   assetBundleName: 

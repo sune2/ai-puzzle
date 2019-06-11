@@ -15,6 +15,9 @@ public class Puzzle : MonoBehaviour
     public static readonly int Empty = Width * Height - 1;
 
     [SerializeField]
+    private bool _showView;
+
+    [SerializeField]
     private PuzzleCellView _cellViewPrefab;
 
     [SerializeField]
@@ -40,7 +43,7 @@ public class Puzzle : MonoBehaviour
             for (int j = 0; j < Width; j++)
             {
                 var cellView = Instantiate(_cellViewPrefab, _gridLayoutGroup.transform, false);
-                cellView.Initialize(i, j);
+                cellView.Initialize(i, j, _showView);
                 cellView.onClicked += () => OnClickedCell(cellView);
                 _cellViews[i][j] = cellView;
                 _correctPositions[i * Width + j] = ValueTuple.Create(i, j); 
@@ -72,8 +75,6 @@ public class Puzzle : MonoBehaviour
 
     public void Initialize()
     {
-        var numbers = Enumerable.Range(0, Width * Height).OrderBy(x => Guid.NewGuid()).ToArray();
-
         var cnt = 0;
         for (int i = 0; i < Height; i++)
         {
@@ -174,17 +175,22 @@ public class Puzzle : MonoBehaviour
 
     public int GetFirstDifferentIndex()
     {
-        var numbers = GetCellNumbers();
+        // var numbers = GetCellNumbers();
 
-        for (int i = 0; i < numbers.Count; i++)
+        var cnt = 0;
+        for (int i = 0; i < Height; i++)
         {
-            if (numbers[i] != i)
+            for (int j = 0; j < Width; j++)
             {
-                return i;
+                if (cnt != _cellViews[i][j].Number)
+                {
+                    return cnt;
+                }
+                cnt++;
             }
         }
 
-        return numbers.Count;
+        return Area;
     }
     
     public int GetDistanceSum()
