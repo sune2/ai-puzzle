@@ -47,7 +47,7 @@ public class PuzzleAgent : Agent
         
         if (val > _currentMaxIndex)
         {
-            AddReward(10 * (val - _currentMaxIndex));
+            AddReward(val - _currentMaxIndex);
             _currentMaxIndex = val;
         }
         
@@ -57,7 +57,7 @@ public class PuzzleAgent : Agent
 
         if (val == Puzzle.Area)
         {
-            AddReward(100);
+            AddReward(10);
             Done();
         }
     }
