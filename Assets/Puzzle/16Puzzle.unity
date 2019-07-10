@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.57482487, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -237,7 +237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 122671814}
@@ -308,7 +307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1965268395}
@@ -379,7 +377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1819571641}
@@ -450,7 +447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 847778075}
@@ -635,7 +631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1096186101}
@@ -706,7 +701,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1667120286}
@@ -834,7 +828,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1501376230}
@@ -905,7 +898,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 986177120}
@@ -939,7 +931,8 @@ MonoBehaviour:
   broadcastHub:
     broadcastingBrains:
     - {fileID: 11400000, guid: 3bf701ee8c9564b98a134c637fa96dce, type: 2}
-    _brainsToControl: []
+    _brainsToControl:
+    - {fileID: 11400000, guid: 3bf701ee8c9564b98a134c637fa96dce, type: 2}
   maxSteps: 1000
   trainingConfiguration:
     width: 360
@@ -1035,7 +1028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1890161464}
@@ -1106,7 +1098,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1391664883}
@@ -1234,7 +1225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 2088488843}
@@ -1362,7 +1352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 804307602}
@@ -1433,7 +1422,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 2066282441}
@@ -1508,7 +1496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &373234674
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1828,7 +1816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 629508278}
@@ -2070,7 +2057,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 915057158}
@@ -2260,7 +2246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 920814280}
@@ -2388,7 +2373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 868342578}
@@ -2459,7 +2443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1067847821}
@@ -2530,7 +2513,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1117034403}
@@ -2658,7 +2640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1411460949}
@@ -2729,7 +2710,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 869533880}
@@ -2866,7 +2846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 36321013}
@@ -2937,7 +2916,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 936616892}
@@ -3008,7 +2986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1973154743}
@@ -3079,7 +3056,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 455283654}
@@ -3150,7 +3126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 942480668}
@@ -3221,7 +3196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1112033775}
@@ -3292,7 +3266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1298110541}
@@ -3420,7 +3393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 390597382}
@@ -3662,7 +3634,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1795876165}
@@ -4018,7 +3989,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1277524803}
@@ -4146,7 +4116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 354096614}
@@ -4388,7 +4357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1549044307}
@@ -4459,7 +4427,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1993104913}
@@ -4530,7 +4497,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 410560678}
@@ -4715,7 +4681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 468217988}
@@ -4900,7 +4865,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 426645246}
@@ -4971,7 +4935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1673548672}
@@ -5119,7 +5082,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1800494093}
@@ -5190,7 +5152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 120174294}
@@ -5261,7 +5222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 883719998}
@@ -5332,7 +5292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 471991333}
@@ -5460,7 +5419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1484625038}
@@ -5531,7 +5489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 310485358}
@@ -5716,7 +5673,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1572490588}
@@ -6129,7 +6085,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1605267356}
@@ -6371,7 +6326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1472117691}
@@ -6556,7 +6510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1444724501}
@@ -6627,7 +6580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1570780543}
@@ -6983,7 +6935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1406029882}
@@ -7054,7 +7005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 564455791}
@@ -7296,7 +7246,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 885878961}
@@ -7367,7 +7316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1509637790}
@@ -7438,7 +7386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 949149160}
@@ -7719,7 +7666,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1417867502}
@@ -7790,7 +7736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1424540485}
@@ -7918,7 +7863,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 902704511}
@@ -7995,7 +7939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1907230416
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8026,7 +7970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 1
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 497958636}
@@ -8117,7 +8060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1368673047}
@@ -8188,7 +8130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1668256029}
@@ -8430,7 +8371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1634693339}
@@ -8501,7 +8441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 176258133}
@@ -8686,7 +8625,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 2116732445}
@@ -8757,7 +8695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 288494442}
@@ -8885,7 +8822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644cdb1510e284cd68a9320a56e0fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showView: 0
   _cellViewPrefab: {fileID: 114011817620293726, guid: 0c8605bb31a1d4d419dab14f4208d947,
     type: 2}
   _gridLayoutGroup: {fileID: 1455059003}

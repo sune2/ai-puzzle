@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using MLAgents;
+﻿using MLAgents;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PuzzleAgent : Agent
 {
@@ -25,7 +20,6 @@ public class PuzzleAgent : Agent
         base.CollectObservations();
         var vec = new float[Puzzle.Area * Puzzle.Area];
         var numbers = _puzzle.GetCellNumbers();
-        // Debug.Log(string.Join(",", numbers));
         for (int i = 0; i < Puzzle.Area; i++)
         {
             vec[numbers[i] * Puzzle.Area + i] = 1;
@@ -52,8 +46,6 @@ public class PuzzleAgent : Agent
         }
         
         AddReward(-0.01f);
-
-        // Debug.Log(GetReward());
 
         if (val == Puzzle.Area)
         {

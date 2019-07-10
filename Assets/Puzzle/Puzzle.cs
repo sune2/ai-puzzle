@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class Puzzle : MonoBehaviour
@@ -10,8 +8,6 @@ public class Puzzle : MonoBehaviour
     private const int Height = 4;
     public const int Area = Width * Height;
 
-    public static readonly int Empty = Width * Height - 1;
-    
     private static readonly int[] dy = {-1, 0, 1, 0};
     private static readonly int[] dx = {0, 1, 0, -1};
 
@@ -26,10 +22,8 @@ public class Puzzle : MonoBehaviour
 
     private Vector2Int _emptyPos;
 
-    // Use this for initialization
     void Awake()
     {
-        // Time.timeScale = 0.05f;
         _gridLayoutGroup.constraintCount = Width;
         _cellViews = new PuzzleCellView[Height][];
         for (int i = 0; i < Height; i++)
@@ -65,7 +59,7 @@ public class Puzzle : MonoBehaviour
 
     public void Initialize()
     {
-        var cnt = 1;
+        var cnt = 0;
         for (int i = 0; i < Height; i++)
         {
             for (int j = 0; j < Width; j++)
@@ -75,8 +69,6 @@ public class Puzzle : MonoBehaviour
             }
         }
 
-        // 右下のセルは0にして空白を表現する
-        _cellViews[Height - 1][Width - 1].SetNumber(0);
         _emptyPos = new Vector2Int(Width - 1, Height - 1);
 
         // 適当な回数ランダムでスライドして初期配置を作る
@@ -86,7 +78,7 @@ public class Puzzle : MonoBehaviour
         }
     }
 
-    public IList<int> GetCellNumbers()
+    public List<int> GetCellNumbers()
     {
         var res = new List<int>();
         for (int i = 0; i < Height; i++)
@@ -104,16 +96,13 @@ public class Puzzle : MonoBehaviour
     {
         var x = _emptyPos.x + dx[dir];
         var y = _emptyPos.y + dy[dir];
-
         if (x < 0 || x >= Width || y < 0 || y >= Height) return false;
 
         var cellView = _cellViews[_emptyPos.y][_emptyPos.x];
-        int number = _cellViews[y][x].Number;
+        var number = _cellViews[y][x].Number;
         _cellViews[y][x].SetNumber(cellView.Number);
         cellView.SetNumber(number);
-
         _emptyPos = new Vector2Int(x, y);
-
         return true;
     }
 
@@ -133,6 +122,6 @@ public class Puzzle : MonoBehaviour
             }
         }
 
-        return Area;
+        return cnt;
     }
 }

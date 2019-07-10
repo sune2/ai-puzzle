@@ -10,7 +10,7 @@ public class PuzzleCellView : MonoBehaviour
 
     public void SetNumber(int number)
     {
-        _label.text = $"{(number == 0 ? (number + 1).ToString() : "")}";
+        _label.text = $"{(number != Puzzle.Area - 1 ? (number + 1).ToString() : "")}";
         Number = number;
     }
 }
