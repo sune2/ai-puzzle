@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 27c05428ac4814f07a4f1533a393416e
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400002: Assets/Puzzle/Brains/PuzzleLearningBrain4x4_3.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}
