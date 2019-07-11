@@ -407,12 +407,12 @@ namespace MLAgents
         {
             if (isInference)
             {
-                ConfigureEnvironmentHelper(inferenceConfiguration);
+                ConfigureEnvironmentHelper(inferenceConfiguration, false);
                 Monitor.SetActive(true);
             }
             else
             {
-                ConfigureEnvironmentHelper(trainingConfiguration);
+                ConfigureEnvironmentHelper(trainingConfiguration, true);
                 Monitor.SetActive(false);
             }
         }
@@ -424,9 +424,12 @@ namespace MLAgents
         /// <param name="config">
         /// Environment configuration (specified in the Editor).
         /// </param>
-        static void ConfigureEnvironmentHelper(EnvironmentConfiguration config)
+        static void ConfigureEnvironmentHelper(EnvironmentConfiguration config, bool setResolution)
         {
-            Screen.SetResolution(config.width, config.height, false);
+            if (setResolution)
+            {
+                Screen.SetResolution(config.width, config.height, false);
+            }
             QualitySettings.SetQualityLevel(config.qualityLevel, true);
             Time.timeScale = config.timeScale;
             Time.captureFramerate = 60;
