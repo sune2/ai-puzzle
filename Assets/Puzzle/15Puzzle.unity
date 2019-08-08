@@ -976,8 +976,7 @@ MonoBehaviour:
   broadcastHub:
     broadcastingBrains:
     - {fileID: 11400000, guid: da6dac179cb1143d194fd0392ba6b7c9, type: 2}
-    _brainsToControl:
-    - {fileID: 11400000, guid: da6dac179cb1143d194fd0392ba6b7c9, type: 2}
+    _brainsToControl: []
   maxSteps: 1000
   trainingConfiguration:
     width: 360
@@ -989,7 +988,7 @@ MonoBehaviour:
     width: 1280
     height: 720
     qualityLevel: 5
-    timeScale: 0.05
+    timeScale: 0.07
     targetFrameRate: 60
   resetParameters:
     resetParameters: []
