@@ -1,9 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Puzzle : MonoBehaviour
 {
+    [SerializeField]
+    private PuzzleAcademy _academy;
+
     private const int Width = 4;
     private const int Height = 4;
     public const int Area = Width * Height;
@@ -37,6 +41,11 @@ public class Puzzle : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        StartCoroutine(InfinitePlay());
+    }
+
 //    private void Update()
 //    {
 //        if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -59,6 +68,8 @@ public class Puzzle : MonoBehaviour
 
     public void Initialize()
     {
+        SetClearView(false);
+
         var cnt = 0;
         for (int i = 0; i < Height; i++)
         {
@@ -76,6 +87,32 @@ public class Puzzle : MonoBehaviour
         {
             Slide(Random.Range(0, 4));
         }
+    }
+
+    private IEnumerator InfinitePlay()
+    {
+        while (true)
+        {
+            yield return OnePlay();
+            yield return new WaitForSeconds(3f);
+        }
+    }
+
+    private IEnumerator OnePlay()
+    {
+        while (true)
+        {
+            _academy.EnvironmentStep();
+            var val = GetFirstDifferentIndex();
+            if (val == Area)
+            {
+                break;
+            }
+
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        SetClearView(true);
     }
 
     public List<int> GetCellNumbers()
@@ -123,5 +160,16 @@ public class Puzzle : MonoBehaviour
         }
 
         return cnt;
+    }
+
+    public void SetClearView(bool isClear)
+    {
+        for (int i = 0; i < Height; i++)
+        {
+            for (int j = 0; j < Width; j++)
+            {
+                _cellViews[i][j].SetClearState(isClear);
+            }
+        }
     }
 }

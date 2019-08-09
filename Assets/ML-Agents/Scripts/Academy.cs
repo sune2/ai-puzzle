@@ -37,10 +37,12 @@ namespace MLAgents
         [Tooltip("Height of the environment window in pixels.")]
         public int height;
 
-        [Tooltip("Rendering quality of environment. (Higher is better quality.)")] [Range(0, 5)]
+        [Tooltip("Rendering quality of environment. (Higher is better quality.)")]
+        [Range(0, 5)]
         public int qualityLevel;
 
-        [Tooltip("Speed at which environment is run. (Higher is faster.)")] [Range(0.01f, 100f)]
+        [Tooltip("Speed at which environment is run. (Higher is faster.)")]
+        [Range(0.01f, 100f)]
         public float timeScale;
 
         [Tooltip("Frames per second (FPS) engine attempts to maintain.")]
@@ -144,6 +146,7 @@ namespace MLAgents
         [Tooltip("List of custom parameters that can be changed in the " +
                  "environment when it resets.")]
         public ResetParameters resetParameters;
+
         public CommunicatorObjects.CustomResetParameters customResetParameters;
 
         // Fields not provided in the Inspector.
@@ -278,7 +281,8 @@ namespace MLAgents
             InitializeAcademy();
             Communicator communicator = null;
 
-            var exposedBrains = broadcastHub.broadcastingBrains.Where(x => x != null).ToList();;
+            var exposedBrains = broadcastHub.broadcastingBrains.Where(x => x != null).ToList();
+            ;
             var controlledBrains = broadcastHub.broadcastingBrains.Where(
                 x => x != null && x is LearningBrain && broadcastHub.IsControlled(x));
             foreach (LearningBrain brain in controlledBrains)
@@ -333,6 +337,7 @@ namespace MLAgents
                     academyParameters.BrainParameters.Add(
                         bp.ToProto(brain.name, broadcastHub.IsControlled(brain)));
                 }
+
                 academyParameters.EnvironmentParameters =
                     new CommunicatorObjects.EnvironmentParametersProto();
                 foreach (var key in resetParameters.Keys)
@@ -383,6 +388,7 @@ namespace MLAgents
                 {
                     resetParameters[kv.Key] = kv.Value;
                 }
+
                 customResetParameters = newResetParameters.CustomResetParameters;
             }
         }
@@ -430,6 +436,7 @@ namespace MLAgents
             {
                 Screen.SetResolution(config.width, config.height, false);
             }
+
             QualitySettings.SetQualityLevel(config.qualityLevel, true);
             Time.timeScale = config.timeScale;
             Time.captureFramerate = 60;
@@ -571,7 +578,7 @@ namespace MLAgents
         /// Performs a single environment update to the Academy, Brain and Agent
         /// objects within the environment.
         /// </summary>
-        void EnvironmentStep()
+        public void EnvironmentStep()
         {
             if (modeSwitched)
             {
@@ -653,7 +660,7 @@ namespace MLAgents
         /// <summary>
         /// Monobehavior function that dictates each environment step.
         /// </summary>
-        void FixedUpdate()
+        protected virtual void FixedUpdate()
         {
             EnvironmentStep();
         }

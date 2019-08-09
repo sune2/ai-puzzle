@@ -5,7 +5,7 @@ public class PuzzleAgent : Agent
 {
     [SerializeField]
     Puzzle _puzzle;
-    
+
     private int _currentMaxIndex;
 
     public override void AgentReset()
@@ -27,7 +27,7 @@ public class PuzzleAgent : Agent
 
         AddVectorObs(vec);
     }
-    
+
 
     public override void AgentAction(float[] vectorAction, string textAction)
     {
@@ -38,13 +38,13 @@ public class PuzzleAgent : Agent
         if (!success) AddReward(-1);
 
         var val = _puzzle.GetFirstDifferentIndex();
-        
+
         if (val > _currentMaxIndex)
         {
             AddReward(val - _currentMaxIndex);
             _currentMaxIndex = val;
         }
-        
+
         AddReward(-0.01f);
 
         if (val == Puzzle.Area)
